@@ -28,10 +28,11 @@ export default class Bingo extends Vue {}
   grid-template-columns repeat(5, 1fr)
   grid-template-rows repeat(5, 1fr)
   justify-items center
+  padding 0 4px
   grid-gap 5px
 .bingo-unit
     display block
+    width 100%
     font-size 2rem
-    padding 1rem
     border none
 </style>
