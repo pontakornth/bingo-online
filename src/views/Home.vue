@@ -2,7 +2,7 @@
   <div class="home">
     <h1 class="heading text-light-color">Bingo Online</h1>
     <div class="menu">
-      <router-link to="/" class="button">Create Room</router-link>
+      <router-link to="/host" class="button">Create Room</router-link>
       <router-link to="/bingo" class="button is-secondary">Join Room</router-link>
     </div>
   </div>

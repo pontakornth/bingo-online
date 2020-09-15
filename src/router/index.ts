@@ -23,6 +23,11 @@ const routes: Array<RouteConfig> = [
     name: 'Bingo',
     component: () => import('../views/Bingo.vue'),
   },
+  {
+    path: '/host',
+    name: 'Host',
+    component: () => import('../views/Host.vue'),
+  },
 ];
 
 const router = new VueRouter({
