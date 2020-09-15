@@ -25,8 +25,8 @@ export default class Bingo extends Vue {}
   justify-content flex-start
 .bingo-table
   display grid
-  grid-template-columns repeat(5, 1fr)
-  grid-template-rows repeat(5, 1fr)
+  grid-template-columns repeat(5, 50px)
+  grid-template-rows repeat(5, 50px)
   justify-items center
   padding 0 4px
   grid-gap 5px
