@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+// Color theme
+primary = #0542b9
+secondary = #1368ce
+light-color = darken(#ffffff, 10%)
+colors = {
+    primary: primary,
+    secondary: secondary
+    light-color: light-color
+}
+
+// Global style
+html, body 
+    font-family 'Itim', sans-serif
+
+.button
+  border-radius 4px
+  padding 1rem
+  font-size 2rem
+  background primary
+  font-weight bold
+  color light-color
+  border 1px solid white
+  for name, color in colors
+    &.is-{name}
+        background color
+        if dark(color)
+          color light-color
+        else
+          color black
+
+for name, color in colors
+    .text-{name}
+        color color
+    .bg-{name}
+        background color

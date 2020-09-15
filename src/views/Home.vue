@@ -1,7 +1,10 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+    <h1 class="heading text-light-color">Bingo Online</h1>
+    <div class="menu">
+      <router-link to="/" class="button">Create Room</router-link>
+      <router-link to="/bingo" class="button is-secondary">Join Room</router-link>
+    </div>
   </div>
 </template>
 
@@ -16,3 +19,26 @@ import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
 })
 export default class Home extends Vue {}
 </script>
+
+<style lang="stylus">
+@import '../assets/style.styl'
+@import '../assets/mixins.styl'
+.home
+  column-centered
+  text-align center
+  height 100vh
+  background darken(primary,20%)
+  & .heading
+    color darked(#ffffff,10%)
+
+.heading
+  font-size 4rem
+
+.menu
+  padding 2rem
+  margin auto
+  display grid
+  grid-template-columns repeat(1, 1fr)
+  grid-gap 0.5rem
+
+</style>
