@@ -18,13 +18,15 @@ export default class Bingo extends Vue {}
 @import "../assets/style.styl"
 @import "../assets/mixins.styl"
 .bingo
-  column-centered
+  column-centered()
   background primary
   color light-color
   height 100vh
-  justify-content flex-start
+  justify-content center
+  align-items center
 .bingo-table
   display grid
+  margin auto
   grid-template-columns repeat(5, 50px)
   grid-template-rows repeat(5, 50px)
   justify-items center
@@ -34,5 +36,6 @@ export default class Bingo extends Vue {}
     display block
     width 100%
     font-size 2rem
+    border-radius 999px
     border none
 </style>
